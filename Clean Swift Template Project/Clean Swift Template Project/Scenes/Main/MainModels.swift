@@ -14,18 +14,20 @@ import UIKit
 
 enum Main
 {
-  // MARK: Use cases
-  
-  enum Something
-  {
-    struct Request
+    // MARK: Use cases
+    
+    enum Something
     {
+        struct Request
+        {
+        }
+        struct Response
+        {
+            let item: [Item]
+        }
+        struct ViewModel
+        {
+            let item: [Item]
+        }
     }
-    struct Response
-    {
-    }
-    struct ViewModel
-    {
-    }
-  }
 }

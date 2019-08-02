@@ -14,7 +14,20 @@ import UIKit
 
 class MainWorker
 {
-  func doSomeWork()
-  {
-  }
+    
+    let api = APIRequest()
+    func doSomeWork()
+    {
+    }
+    
+    func getItems(completion: @escaping([Item]?) -> Void){
+        
+        api.open(url: Constants.base_url) { (result) in
+            if result != nil{
+                completion(result)
+            }else{
+                completion(nil)
+            }
+        }
+    }
 }

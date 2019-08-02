@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+class Constants{
+   static let base_url = "https://api.github.com/search/repositories?q=language:swift&sort=stars"
+}
